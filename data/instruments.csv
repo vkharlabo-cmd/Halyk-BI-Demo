@@ -1,0 +1,13 @@
+instrument_id,instrument_type,ticker,market
+1,Equity,HSBK,KASE
+2,Equity,KZTK,KASE
+3,Equity,AAPL,NASDAQ
+4,Equity,NVDA,NASDAQ
+5,Bond,KZGB10Y,KASE
+6,Bond,US10Y,OTC
+7,ETF,SPY,NYSE
+8,ETF,QQQ,NASDAQ
+9,FX,USD/KZT,FX
+10,FX,EUR/USD,FX
+11,Equity,KZAP,KASE
+12,ETF,GLD,NYSE

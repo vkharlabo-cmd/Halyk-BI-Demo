@@ -1,0 +1,321 @@
+client_id,registration_date,client_segment,manager_id,acquisition_channel,status
+1,2025-04-26,Premium,3,Branch,Active
+2,2026-02-22,Mass,8,Mobile App,Active
+3,2025-11-12,Premium,7,Mobile App,Active
+4,2025-11-10,Corporate,7,Referral,Active
+5,2026-03-02,Premium,3,Partner,Active
+6,2025-09-21,Corporate,5,Mobile App,Active
+7,2025-11-19,Mass,4,Branch,Dormant
+8,2025-06-11,Affluent,7,Branch,Closed
+9,2025-03-24,Affluent,1,Paid Search,Dormant
+10,2026-05-29,Affluent,7,Mobile App,Dormant
+11,2025-01-08,Mass,3,Mobile App,Dormant
+12,2025-03-10,Affluent,8,Mobile App,Active
+13,2026-03-08,Mass,4,Mobile App,Active
+14,2025-06-08,Affluent,2,Paid Search,Dormant
+15,2025-04-17,Mass,3,Mobile App,Active
+16,2025-12-07,Mass,8,Mobile App,Active
+17,2025-01-31,Mass,1,Branch,Active
+18,2025-05-29,Mass,1,Referral,Active
+19,2025-03-07,Corporate,8,Branch,Active
+20,2025-09-18,Mass,8,Mobile App,Closed
+21,2025-05-02,Affluent,5,Referral,Active
+22,2025-11-30,Mass,8,Paid Search,Active
+23,2026-01-18,Mass,1,Referral,Active
+24,2025-04-22,Mass,3,Referral,Active
+25,2025-05-06,Corporate,1,Partner,Dormant
+26,2025-08-19,Mass,1,Paid Search,Active
+27,2025-09-14,Mass,1,Partner,Active
+28,2025-10-31,Premium,8,Mobile App,Active
+29,2025-11-12,Mass,2,Referral,Active
+30,2025-11-24,Mass,4,Branch,Active
+31,2025-05-18,Mass,7,Mobile App,Active
+32,2025-04-14,Affluent,2,Referral,Dormant
+33,2025-07-13,Mass,4,Mobile App,Active
+34,2025-07-02,Affluent,5,Mobile App,Active
+35,2026-01-20,Mass,8,Mobile App,Active
+36,2025-04-20,Affluent,5,Partner,Active
+37,2026-04-04,Mass,4,Mobile App,Active
+38,2026-05-04,Mass,4,Mobile App,Dormant
+39,2026-05-12,Mass,8,Mobile App,Active
+40,2025-01-16,Premium,3,Mobile App,Closed
+41,2025-11-05,Mass,8,Mobile App,Closed
+42,2026-01-15,Mass,5,Mobile App,Closed
+43,2025-10-08,Affluent,1,Partner,Active
+44,2025-03-02,Affluent,8,Mobile App,Dormant
+45,2026-05-03,Mass,3,Paid Search,Active
+46,2025-02-20,Mass,7,Mobile App,Active
+47,2025-06-22,Corporate,7,Paid Search,Active
+48,2025-01-26,Mass,7,Paid Search,Active
+49,2025-01-05,Mass,4,Branch,Active
+50,2026-01-03,Mass,5,Paid Search,Active
+51,2025-01-24,Affluent,1,Paid Search,Closed
+52,2025-01-12,Premium,5,Branch,Active
+53,2025-02-10,Premium,5,Branch,Active
+54,2025-02-25,Corporate,7,Paid Search,Active
+55,2026-02-14,Affluent,8,Mobile App,Active
+56,2025-08-17,Corporate,7,Referral,Active
+57,2025-01-22,Mass,6,Mobile App,Active
+58,2025-01-10,Mass,8,Paid Search,Dormant
+59,2026-02-17,Mass,7,Mobile App,Active
+60,2025-03-04,Mass,1,Mobile App,Dormant
+61,2026-04-18,Mass,7,Mobile App,Active
+62,2026-05-17,Premium,4,Mobile App,Active
+63,2025-12-12,Premium,5,Mobile App,Active
+64,2026-05-24,Mass,6,Mobile App,Closed
+65,2025-04-10,Premium,4,Mobile App,Active
+66,2025-04-30,Mass,3,Paid Search,Dormant
+67,2025-10-09,Mass,8,Mobile App,Closed
+68,2025-10-04,Mass,3,Referral,Active
+69,2026-04-05,Mass,5,Paid Search,Closed
+70,2025-06-02,Affluent,5,Mobile App,Dormant
+71,2026-05-28,Mass,3,Mobile App,Active
+72,2025-11-08,Affluent,4,Mobile App,Active
+73,2025-06-12,Mass,4,Paid Search,Active
+74,2025-02-12,Mass,1,Mobile App,Active
+75,2026-04-11,Mass,3,Mobile App,Active
+76,2025-04-06,Affluent,3,Paid Search,Active
+77,2026-06-16,Mass,5,Mobile App,Dormant
+78,2025-05-03,Affluent,7,Referral,Active
+79,2025-12-08,Premium,1,Mobile App,Active
+80,2025-12-09,Mass,6,Mobile App,Dormant
+81,2025-11-13,Affluent,8,Paid Search,Active
+82,2025-03-08,Premium,6,Mobile App,Dormant
+83,2025-11-22,Affluent,8,Branch,Active
+84,2026-05-16,Mass,7,Branch,Active
+85,2025-12-21,Premium,5,Paid Search,Active
+86,2025-07-17,Premium,5,Paid Search,Active
+87,2026-02-04,Mass,4,Paid Search,Active
+88,2026-02-23,Affluent,1,Referral,Active
+89,2026-04-04,Mass,5,Mobile App,Active
+90,2025-05-08,Mass,3,Branch,Active
+91,2025-12-08,Affluent,4,Paid Search,Active
+92,2025-12-13,Mass,6,Partner,Active
+93,2025-02-04,Affluent,6,Referral,Active
+94,2025-11-05,Mass,6,Mobile App,Active
+95,2025-09-29,Mass,6,Partner,Active
+96,2025-09-05,Mass,3,Mobile App,Active
+97,2025-06-06,Mass,7,Paid Search,Active
+98,2025-06-11,Premium,1,Mobile App,Active
+99,2026-02-18,Mass,8,Branch,Dormant
+100,2025-10-24,Affluent,8,Mobile App,Active
+101,2025-10-10,Mass,7,Branch,Active
+102,2025-11-02,Corporate,7,Branch,Active
+103,2026-04-18,Affluent,4,Mobile App,Active
+104,2026-02-09,Mass,4,Partner,Dormant
+105,2026-06-15,Mass,8,Mobile App,Active
+106,2025-04-24,Corporate,1,Referral,Closed
+107,2025-07-17,Mass,2,Branch,Active
+108,2026-03-06,Premium,7,Mobile App,Active
+109,2026-06-14,Mass,4,Mobile App,Active
+110,2025-09-09,Premium,5,Mobile App,Active
+111,2026-02-19,Affluent,3,Branch,Active
+112,2026-03-17,Mass,2,Partner,Active
+113,2025-05-23,Mass,4,Referral,Active
+114,2025-11-01,Affluent,8,Referral,Dormant
+115,2025-01-23,Mass,3,Referral,Active
+116,2026-01-12,Mass,4,Paid Search,Active
+117,2025-01-14,Affluent,5,Mobile App,Active
+118,2025-02-22,Affluent,3,Mobile App,Active
+119,2025-10-14,Mass,2,Mobile App,Closed
+120,2025-09-11,Mass,6,Partner,Active
+121,2026-02-09,Mass,4,Referral,Active
+122,2026-04-23,Mass,8,Referral,Active
+123,2026-05-05,Mass,2,Mobile App,Active
+124,2026-02-21,Mass,3,Mobile App,Dormant
+125,2026-04-12,Affluent,1,Mobile App,Dormant
+126,2025-05-24,Premium,8,Branch,Active
+127,2026-02-13,Affluent,8,Referral,Active
+128,2025-07-27,Corporate,2,Referral,Active
+129,2025-01-11,Premium,5,Mobile App,Active
+130,2025-02-01,Affluent,2,Referral,Active
+131,2025-03-22,Mass,2,Partner,Active
+132,2025-12-30,Affluent,3,Mobile App,Active
+133,2025-10-24,Mass,4,Mobile App,Active
+134,2025-08-08,Mass,6,Mobile App,Active
+135,2025-04-25,Mass,7,Mobile App,Dormant
+136,2026-01-14,Affluent,2,Paid Search,Dormant
+137,2025-08-08,Affluent,5,Branch,Active
+138,2026-05-31,Mass,4,Mobile App,Active
+139,2025-08-10,Mass,5,Mobile App,Dormant
+140,2025-06-08,Mass,5,Mobile App,Active
+141,2025-05-18,Mass,8,Mobile App,Active
+142,2026-05-10,Premium,3,Mobile App,Active
+143,2025-10-10,Premium,3,Referral,Dormant
+144,2025-02-18,Affluent,8,Mobile App,Active
+145,2025-04-07,Mass,5,Mobile App,Active
+146,2025-07-17,Premium,8,Mobile App,Active
+147,2025-01-26,Mass,8,Referral,Dormant
+148,2025-03-12,Mass,8,Branch,Active
+149,2026-06-02,Mass,5,Mobile App,Active
+150,2025-09-03,Mass,3,Mobile App,Dormant
+151,2025-08-09,Affluent,2,Paid Search,Active
+152,2025-09-30,Mass,4,Mobile App,Active
+153,2025-01-21,Mass,7,Partner,Active
+154,2025-06-17,Premium,2,Mobile App,Active
+155,2026-05-17,Affluent,4,Referral,Active
+156,2025-04-15,Affluent,4,Branch,Closed
+157,2026-03-12,Mass,6,Mobile App,Active
+158,2025-08-03,Mass,8,Paid Search,Active
+159,2025-04-13,Affluent,1,Mobile App,Active
+160,2025-05-21,Mass,8,Referral,Active
+161,2026-01-24,Mass,3,Mobile App,Active
+162,2025-11-07,Affluent,1,Mobile App,Dormant
+163,2026-05-31,Premium,1,Mobile App,Active
+164,2025-12-01,Affluent,5,Mobile App,Closed
+165,2026-03-13,Corporate,5,Mobile App,Active
+166,2025-03-27,Corporate,3,Paid Search,Active
+167,2025-07-01,Mass,6,Mobile App,Active
+168,2025-09-29,Mass,8,Mobile App,Dormant
+169,2025-05-06,Mass,3,Mobile App,Active
+170,2025-07-05,Corporate,8,Partner,Active
+171,2025-06-14,Affluent,7,Mobile App,Active
+172,2025-04-14,Affluent,4,Paid Search,Active
+173,2026-01-20,Mass,1,Mobile App,Active
+174,2026-01-19,Mass,3,Branch,Dormant
+175,2025-05-04,Premium,2,Mobile App,Closed
+176,2026-01-26,Mass,4,Mobile App,Active
+177,2025-09-10,Affluent,2,Mobile App,Active
+178,2025-11-04,Mass,2,Referral,Active
+179,2025-11-24,Mass,4,Branch,Active
+180,2025-02-04,Mass,7,Mobile App,Active
+181,2025-01-25,Mass,5,Referral,Active
+182,2026-02-02,Affluent,5,Paid Search,Active
+183,2025-06-06,Mass,1,Branch,Active
+184,2026-01-12,Mass,7,Partner,Active
+185,2025-12-22,Mass,6,Referral,Active
+186,2025-11-11,Mass,6,Branch,Active
+187,2026-04-18,Premium,4,Mobile App,Active
+188,2025-08-05,Mass,5,Referral,Active
+189,2025-02-10,Mass,7,Mobile App,Active
+190,2025-12-05,Premium,2,Paid Search,Active
+191,2025-03-12,Mass,1,Mobile App,Active
+192,2025-02-09,Mass,8,Referral,Active
+193,2026-01-01,Mass,1,Mobile App,Active
+194,2025-08-13,Mass,7,Partner,Dormant
+195,2026-01-27,Mass,5,Referral,Active
+196,2025-06-03,Affluent,6,Partner,Active
+197,2025-09-07,Mass,3,Mobile App,Active
+198,2026-03-26,Mass,2,Partner,Dormant
+199,2026-05-22,Mass,6,Referral,Dormant
+200,2026-01-27,Mass,5,Partner,Dormant
+201,2025-04-04,Mass,3,Mobile App,Active
+202,2025-11-04,Mass,2,Mobile App,Dormant
+203,2025-03-30,Premium,4,Branch,Active
+204,2025-08-18,Mass,8,Mobile App,Active
+205,2025-01-11,Mass,1,Partner,Active
+206,2025-08-18,Mass,6,Mobile App,Active
+207,2025-04-21,Mass,3,Paid Search,Active
+208,2025-10-04,Affluent,4,Partner,Active
+209,2026-02-15,Mass,8,Paid Search,Active
+210,2025-06-07,Mass,6,Referral,Active
+211,2025-10-11,Mass,2,Referral,Dormant
+212,2025-04-15,Corporate,3,Mobile App,Active
+213,2025-01-26,Mass,7,Mobile App,Active
+214,2025-02-17,Mass,5,Mobile App,Dormant
+215,2026-03-03,Premium,3,Mobile App,Active
+216,2026-05-15,Mass,3,Mobile App,Active
+217,2025-02-10,Mass,6,Mobile App,Dormant
+218,2025-10-24,Mass,2,Branch,Active
+219,2025-07-02,Mass,3,Mobile App,Active
+220,2025-08-22,Affluent,7,Paid Search,Active
+221,2026-05-08,Mass,1,Mobile App,Active
+222,2025-08-17,Mass,6,Mobile App,Active
+223,2026-06-03,Affluent,3,Branch,Dormant
+224,2025-01-09,Mass,3,Mobile App,Active
+225,2026-03-03,Affluent,3,Branch,Dormant
+226,2025-09-23,Mass,3,Branch,Dormant
+227,2025-06-18,Mass,4,Mobile App,Active
+228,2026-05-22,Mass,5,Mobile App,Active
+229,2026-04-08,Mass,3,Referral,Dormant
+230,2026-03-09,Mass,4,Mobile App,Dormant
+231,2025-10-11,Affluent,7,Mobile App,Dormant
+232,2025-12-23,Mass,6,Mobile App,Active
+233,2026-03-11,Premium,6,Mobile App,Active
+234,2025-11-12,Mass,3,Referral,Active
+235,2026-05-10,Mass,5,Mobile App,Dormant
+236,2025-11-05,Mass,4,Branch,Active
+237,2026-04-30,Mass,1,Mobile App,Dormant
+238,2025-06-06,Affluent,8,Partner,Active
+239,2026-06-10,Mass,4,Mobile App,Active
+240,2025-10-02,Mass,1,Mobile App,Active
+241,2025-12-27,Corporate,7,Mobile App,Dormant
+242,2025-02-12,Mass,5,Mobile App,Dormant
+243,2026-03-12,Mass,3,Mobile App,Active
+244,2026-04-23,Mass,1,Mobile App,Active
+245,2025-06-06,Mass,4,Referral,Active
+246,2025-08-27,Mass,5,Referral,Active
+247,2025-09-13,Mass,1,Referral,Active
+248,2025-01-29,Mass,6,Paid Search,Active
+249,2025-11-02,Mass,8,Mobile App,Active
+250,2025-11-30,Premium,7,Mobile App,Dormant
+251,2026-03-15,Mass,2,Partner,Active
+252,2026-01-21,Mass,7,Referral,Active
+253,2025-05-03,Affluent,2,Partner,Active
+254,2026-05-27,Corporate,4,Referral,Active
+255,2025-06-02,Mass,8,Referral,Dormant
+256,2026-05-20,Mass,1,Mobile App,Dormant
+257,2025-09-24,Affluent,2,Mobile App,Active
+258,2025-09-10,Mass,6,Mobile App,Active
+259,2026-01-14,Mass,1,Paid Search,Active
+260,2025-10-22,Mass,7,Referral,Active
+261,2025-10-13,Affluent,7,Mobile App,Active
+262,2026-06-16,Mass,4,Partner,Active
+263,2025-01-02,Mass,4,Mobile App,Active
+264,2026-01-29,Mass,8,Mobile App,Closed
+265,2025-10-25,Affluent,3,Branch,Active
+266,2025-06-17,Premium,6,Mobile App,Active
+267,2026-04-18,Mass,2,Branch,Active
+268,2025-03-21,Premium,8,Partner,Active
+269,2025-06-01,Corporate,8,Mobile App,Active
+270,2025-02-14,Mass,4,Paid Search,Active
+271,2025-12-12,Mass,5,Paid Search,Active
+272,2025-10-02,Affluent,5,Mobile App,Active
+273,2025-09-16,Mass,2,Paid Search,Active
+274,2026-03-25,Affluent,7,Branch,Active
+275,2025-06-26,Mass,2,Mobile App,Active
+276,2025-05-16,Mass,3,Mobile App,Dormant
+277,2025-11-21,Affluent,1,Referral,Active
+278,2025-07-01,Affluent,2,Branch,Active
+279,2025-10-11,Mass,8,Partner,Active
+280,2025-07-01,Premium,3,Paid Search,Active
+281,2026-01-29,Affluent,7,Mobile App,Dormant
+282,2025-07-20,Mass,7,Branch,Dormant
+283,2025-05-17,Mass,4,Referral,Active
+284,2025-03-09,Affluent,8,Mobile App,Active
+285,2025-01-15,Affluent,6,Paid Search,Active
+286,2025-08-22,Affluent,8,Mobile App,Active
+287,2026-04-21,Mass,4,Mobile App,Dormant
+288,2025-01-18,Mass,1,Mobile App,Dormant
+289,2025-09-26,Mass,5,Mobile App,Active
+290,2025-09-02,Mass,2,Mobile App,Active
+291,2025-11-06,Mass,6,Branch,Active
+292,2025-02-06,Mass,2,Referral,Active
+293,2026-03-06,Mass,4,Paid Search,Active
+294,2025-06-19,Mass,7,Branch,Active
+295,2026-03-20,Corporate,7,Branch,Active
+296,2026-01-12,Premium,5,Partner,Active
+297,2026-01-29,Mass,4,Mobile App,Active
+298,2025-09-14,Mass,2,Partner,Closed
+299,2026-02-17,Mass,3,Mobile App,Active
+300,2026-03-14,Affluent,2,Mobile App,Active
+301,2026-06-04,Mass,8,Mobile App,Dormant
+302,2026-06-02,Affluent,6,Mobile App,Active
+303,2026-03-01,Mass,4,Referral,Active
+304,2025-12-12,Mass,3,Mobile App,Active
+305,2025-07-05,Mass,7,Referral,Active
+306,2025-02-13,Mass,5,Mobile App,Active
+307,2025-11-15,Mass,2,Mobile App,Dormant
+308,2026-03-03,Premium,5,Branch,Active
+309,2026-05-01,Premium,7,Paid Search,Active
+310,2025-04-15,Affluent,3,Mobile App,Active
+311,2025-03-24,Affluent,5,Mobile App,Active
+312,2025-12-17,Mass,2,Referral,Closed
+313,2025-04-30,Mass,2,Partner,Active
+314,2025-09-04,Affluent,4,Mobile App,Active
+315,2025-09-28,Mass,6,Mobile App,Active
+316,2025-01-06,Mass,4,Partner,Active
+317,2025-02-11,Mass,4,Mobile App,Active
+318,2025-08-03,Mass,2,Branch,Active
+319,2025-06-16,Corporate,7,Paid Search,Active
+320,2026-02-04,Mass,1,Mobile App,Closed

@@ -1,0 +1,13 @@
+{
+  "name": "Halyk Broker Demo RU",
+  "dataColors": ["#00A887", "#063B54", "#D6A84B", "#4C9FBA", "#7B68A6", "#D95D5D", "#65B96E", "#8A98A5"],
+  "background": "#F3F6F9",
+  "foreground": "#14202B",
+  "tableAccent": "#00A887",
+  "good": "#2E9D68",
+  "neutral": "#D6A84B",
+  "bad": "#D95D5D",
+  "minimum": "#EAF2F5",
+  "center": "#D6A84B",
+  "maximum": "#00A887"
+}

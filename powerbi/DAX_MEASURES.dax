@@ -1,0 +1,103 @@
+// Расчётная таблица календаря
+Календарь =
+ADDCOLUMNS(
+    CALENDAR(DATE(2025, 1, 1), DATE(2026, 12, 31)),
+    "Год", YEAR([Date]),
+    "Номер месяца", MONTH([Date]),
+    "Месяц", FORMAT([Date], "[$-ru-RU]mmmm"),
+    "Год-месяц", FORMAT([Date], "YYYY-MM"),
+    "Квартал", "К" & FORMAT([Date], "Q")
+)
+
+// Основные меры
+Торговый оборот = SUM(trades[trade_amount])
+
+Комиссионный доход = SUM(trades[commission])
+
+Количество сделок = DISTINCTCOUNT(trades[trade_id])
+
+Активные клиенты =
+COUNTROWS(
+    FILTER(
+        VALUES(clients[client_id]),
+        CALCULATE(DISTINCTCOUNT(trades[trade_id])) > 0
+    )
+)
+
+Новые клиенты =
+CALCULATE(
+    DISTINCTCOUNT(clients[client_id]),
+    CROSSFILTER('Календарь'[Date], trades[trade_date], NONE),
+    USERELATIONSHIP('Календарь'[Date], clients[registration_date])
+)
+
+Пополнения =
+CALCULATE(
+    SUM(cash_operations[amount]),
+    cash_operations[operation_type] = "DEPOSIT"
+)
+
+Выводы =
+CALCULATE(
+    SUM(cash_operations[amount]),
+    cash_operations[operation_type] = "WITHDRAWAL"
+)
+
+Чистый денежный приток = [Пополнения] - [Выводы]
+
+Средняя комиссия на активного клиента =
+DIVIDE([Комиссионный доход], [Активные клиенты])
+
+Клиенты с первой сделкой =
+COUNTROWS(
+    FILTER(
+        VALUES(clients[client_id]),
+        CALCULATE(DISTINCTCOUNT(trades[trade_id]), REMOVEFILTERS('Календарь')) > 0
+    )
+)
+
+Конверсия в первую сделку =
+DIVIDE([Клиенты с первой сделкой], DISTINCTCOUNT(accounts[account_id]))
+
+Неактивные клиенты 90 дней =
+VAR ПоследняяДатаНабора = CALCULATE(MAX(trades[trade_date]), ALL(trades))
+RETURN
+COUNTROWS(
+    FILTER(
+        VALUES(clients[client_id]),
+        VAR ПоследняяСделка = CALCULATE(MAX(trades[trade_date]), REMOVEFILTERS('Календарь'))
+        RETURN ISBLANK(ПоследняяСделка) || ПоследняяСделка < ПоследняяДатаНабора - 90
+    )
+)
+
+Комиссия прошлого месяца =
+CALCULATE(
+    [Комиссионный доход],
+    DATEADD('Календарь'[Date], -1, MONTH)
+)
+
+Изменение комиссии к прошлому месяцу =
+DIVIDE(
+    [Комиссионный доход] - [Комиссия прошлого месяца],
+    [Комиссия прошлого месяца]
+)
+
+// Проверки качества
+Дубли сделок = COUNTROWS(trades) - DISTINCTCOUNT(trades[trade_id])
+
+Сделки без клиента =
+COUNTROWS(FILTER(trades, ISBLANK(RELATED(clients[client_id]))))
+
+Сделки без инструмента =
+COUNTROWS(FILTER(trades, ISBLANK(RELATED(instruments[instrument_id]))))
+
+Отрицательные комиссии =
+COUNTROWS(FILTER(trades, trades[commission] < 0))
+
+Операции без счёта =
+COUNTROWS(FILTER(cash_operations, ISBLANK(RELATED(accounts[account_id]))))
+
+Всего ошибок качества =
+[Дубли сделок] + [Сделки без клиента] + [Сделки без инструмента] + [Отрицательные комиссии] + [Операции без счёта]
+
+Статус качества = IF([Всего ошибок качества] = 0, "Данные готовы", "Публикация заблокирована")

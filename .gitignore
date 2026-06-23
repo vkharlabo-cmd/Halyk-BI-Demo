@@ -1,0 +1,78 @@
+# Секреты — НИКОГДА не коммитить
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+*.pem
+*.key
+secrets/
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+.turbo/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# Python / FastAPI
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Базы данных
+*.sqlite
+*.sqlite3
+*.db
+
+# Логи
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+
+# Uploads / медиа (если хранятся локально)
+uploads/
+media/
+public/uploads/
+
+# Тестовое покрытие
+coverage/
+.coverage
+htmlcov/
+
+# Временные файлы
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Claude Code (если не хочешь коммитить настройки)
+# .claude/  ← раскомментируй если настройки не нужны в репо

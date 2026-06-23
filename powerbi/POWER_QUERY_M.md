@@ -1,12 +1,15 @@
-# Power Query: загрузка CSV
+# Power Query: загрузка CSV из GitHub
 
-Сначала создайте текстовый параметр `RootPath` со значением `C:\HalykBI\data`. Затем создайте пустые запросы с указанными именами и вставьте код через «Расширенный редактор».
+Сначала создайте текстовый параметр `RootUrl` со значением
+`https://raw.githubusercontent.com/vkharlabo-cmd/Halyk-BI-Demo/main/data`.
+Затем создайте пустые запросы с указанными именами и вставьте код через
+«Расширенный редактор». Для источника выберите аутентификацию `Anonymous`.
 
 ## clients
 
 ```powerquery
 let
-    Source = Csv.Document(File.Contents(RootPath & "\\clients.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Source = Csv.Document(Web.Contents(RootUrl & "/clients.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Types = Table.TransformColumnTypes(Headers, {{"client_id", Int64.Type}, {"registration_date", type date}, {"client_segment", type text}, {"manager_id", Int64.Type}, {"acquisition_channel", type text}, {"status", type text}})
 in
@@ -17,7 +20,7 @@ in
 
 ```powerquery
 let
-    Source = Csv.Document(File.Contents(RootPath & "\\accounts.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Source = Csv.Document(Web.Contents(RootUrl & "/accounts.csv"), [Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Types = Table.TransformColumnTypes(Headers, {{"account_id", Int64.Type}, {"client_id", Int64.Type}, {"open_date", type date}, {"account_type", type text}, {"status", type text}})
 in
@@ -28,7 +31,7 @@ in
 
 ```powerquery
 let
-    Source = Csv.Document(File.Contents(RootPath & "\\trades.csv"), [Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Source = Csv.Document(Web.Contents(RootUrl & "/trades.csv"), [Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Types = Table.TransformColumnTypes(Headers, {{"trade_id", Int64.Type}, {"client_id", Int64.Type}, {"trade_date", type date}, {"instrument_id", Int64.Type}, {"trade_amount", Currency.Type}, {"commission", Currency.Type}, {"operation_type", type text}})
 in
@@ -39,7 +42,7 @@ in
 
 ```powerquery
 let
-    Source = Csv.Document(File.Contents(RootPath & "\\cash_operations.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Source = Csv.Document(Web.Contents(RootUrl & "/cash_operations.csv"), [Delimiter=",", Columns=6, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Types = Table.TransformColumnTypes(Headers, {{"operation_id", Int64.Type}, {"account_id", Int64.Type}, {"client_id", Int64.Type}, {"operation_date", type date}, {"operation_type", type text}, {"amount", Currency.Type}})
 in
@@ -50,7 +53,7 @@ in
 
 ```powerquery
 let
-    Source = Csv.Document(File.Contents(RootPath & "\\instruments.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Source = Csv.Document(Web.Contents(RootUrl & "/instruments.csv"), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Types = Table.TransformColumnTypes(Headers, {{"instrument_id", Int64.Type}, {"instrument_type", type text}, {"ticker", type text}, {"market", type text}})
 in
@@ -61,7 +64,7 @@ in
 
 ```powerquery
 let
-    Source = Csv.Document(File.Contents(RootPath & "\\managers.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+    Source = Csv.Document(Web.Contents(RootUrl & "/managers.csv"), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
     Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
     Types = Table.TransformColumnTypes(Headers, {{"manager_id", Int64.Type}, {"manager_name", type text}, {"department", type text}})
 in

@@ -1,0 +1,13 @@
+{
+  "name": "Halyk Broker Executive Dark RU",
+  "dataColors": ["#00B894", "#D6A84B", "#4CB7D8", "#7C6EE6", "#5FD08A", "#F07A7A", "#9BB3BD", "#FFFFFF"],
+  "background": "#07131E",
+  "foreground": "#EAF4F5",
+  "tableAccent": "#00B894",
+  "good": "#5FD08A",
+  "neutral": "#D6A84B",
+  "bad": "#F07A7A",
+  "minimum": "#18333F",
+  "center": "#D6A84B",
+  "maximum": "#00B894"
+}
